@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Team Triguna</title>
+    <link rel="stylesheet" href="css file/footer.css">
+    <link rel="stylesheet" href="css file/header.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        /* Header Banner */
+        .banner {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            padding: 40px 20px;
+        }
+
+        .newsletter h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+
+        /* PDF Thumbnail */
+        .pdf-container {
+            margin-top: 20px;
+        }
+
+        .pdf-container img {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .pdf-container img:hover {
+            transform: scale(1.05);
+        }
+        body {
+    padding-top: 60px; /* Navbar के नीचे 60px gap */
+}
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <!-- Newsletter Header Image -->
+    <img src="images/newsletter-banner.jpg" alt="Newsletter Banner" class="banner">
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Latest Newsletter</h2>
+        <p>Click the image below to download the latest newsletter.</p>
+        <div class="pdf-container">
+            <a href="images/newslater/Newsletter-of-Triguna-.pdf" download>
+                <img src="images/newslater/01.jpeg" alt="Download Newsletter">
+            </a>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>

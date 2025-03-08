@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="css file/footer.css">
+    <link rel="stylesheet" href="css file/header.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+body {
+    padding-top: 60px; /* Navbar के नीचे 60px gap */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job {
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.job:hover {
+    background: #0056b3;
+}
+
+.job-details, .form-container {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+    </style>
+</head>
+<body>
+  <header></header>
+
+    <div class="container">
+        <h1>Careers</h1>
+        <p>Explore career opportunities with Team Triguna and be part of a dynamic team committed to social impact. Together, we can make a difference.</p>
+
+        <h2>Current Openings</h2>
+
+        <div class="job-list">
+            <div class="job" onclick="showJobDetails('Project Associate', 'Manage and coordinate projects related to social impact.')">
+                <h3>Project Associate</h3>
+            </div>
+            <div class="job" onclick="showJobDetails('Assistant Manager', 'Oversee operations and manage resources for various initiatives.')">
+                <h3>Assistant Manager</h3>
+            </div>
+        </div>
+
+        <!-- Job Details Section -->
+        <div id="jobDetails" class="job-details">
+            <h2 id="jobTitle"></h2>
+            <p id="jobDescription"></p>
+            <button onclick="showApplicationForm()">Apply Now</button>
+        </div>
+
+        <!-- Application Form -->
+        <div id="applicationForm" class="form-container">
+            <h2>Apply for <span id="selectedJob"></span></h2>
+            <form id="jobApplicationForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" id="mobile" placeholder="Your Mobile Number" required>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+                <button type="button" onclick="submitApplication()">Submit</button>
+            </form>
+            <footer></footer>
+        </div>
+    </div>
+    <script>
+      function showJobDetails(title, description) {
+    document.getElementById('jobTitle').innerText = title;
+    document.getElementById('jobDescription').innerText = description;
+    document.getElementById('jobDetails').style.display = "block";
+    document.getElementById('applicationForm').style.display = "none";
+}
+
+function showApplicationForm() {
+    document.getElementById('selectedJob').innerText = document.getElementById('jobTitle').innerText;
+    document.getElementById('applicationForm').style.display = "block";
+}
+
+function submitApplication() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let mobile = document.getElementById('mobile').value;
+    let resume = document.getElementById('resume').files[0];
+
+    if (!name || !email || !mobile || !resume) {
+        alert("Please fill all the fields and upload your resume.");
+        return;
+    }
+
+    let jobTitle = document.getElementById('selectedJob').innerText;
+    let whatsappMessage = `New Job Application%0A%0AJob: ${jobTitle}%0AName: ${name}%0AEmail: ${email}%0AMobile: ${mobile}`;
+
+    let whatsappNumber = "91XXXXXXXXXX"; // Replace with your WhatsApp number
+    let whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+    window.open(whatsappLink, '_blank');
+}
+
+    </script>
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>

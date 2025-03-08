@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop - Team Triguna</title>
+    <link rel="stylesheet" href="css file/footer.css">
+    <link rel="stylesheet" href="css file/header.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(to right, #4a90e2, #003366);
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        body {
+            padding-top: 60px; /* Navbar के नीचे 60px gap */
+        }
+
+        /* Content Section */
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            color: #003366;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content img {
+            width: 90%;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            color: #003366;
+        }
+
+        .gallery p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 30%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-container img {
+                width: 80%;
+            }
+
+            .content p,
+            .gallery p {
+                font-size: 1em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <section class="banner">
+        <h1>Workshop</h1>
+    </section>
+
+    <section class="content">
+        <h2>Workshop on Fundamentals of Yoga - By Ms. Niti Tomar</h2>
+        <p>A session on the fundamentals of yoga was held on the occasion of the 9th International Yoga Day...</p>
+        <img src="images/workshop/01.jpeg" alt="Yoga Day Image">
+    </section>
+
+    <section class="gallery">
+        <h2>World Environment Day Celebrations</h2>
+        <p>To promote environmental conservation and sustainable farming practices...</p>
+        <div class="image-container">
+            <img src="images/workshop/02.jpeg" alt="Plantation Drive">
+            <img src="images/workshop/03.jpeg" alt="Tree Plantation">
+            <img src="images/workshop/04.jpeg" alt="Environment Awareness">
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Passport to Earning Program Orientation</h2>
+        <p>An orientation session was held by B-ABLE Foundation...</p>
+        <div class="image-container">
+            <img src="images/workshop/05.jpeg" alt="Classroom Session">
+            <img src="images/workshop/06.jpeg" alt="Discussion Session">
+            <img src="images/workshop/07.jpeg" alt="Presentation Session">
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>

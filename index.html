@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Triguna</title>
+    <!-- <link rel="stylesheet" href="css file/styles.css"> -->
+    <link rel="stylesheet" href="css file/header.css">
+    <link rel="stylesheet" href="css file/footer.css">
+</head>
+<body>
+    
+    <header></header>
+
+    <section class="hero">
+        <div class="scrolling-images">
+            <img src="images/home/01.jpeg" alt="Image 1">
+            <img src="images/home/02.jpeg" alt="Image 2">
+            <img src="images/home/03.png" alt="Image 3">
+            <img src="images/home/04.jpeg" alt="Image 4">
+            <img src="images/home/05.jpeg" alt="Image 5">
+            <!-- Duplicate images for smooth infinite scroll -->
+            <img src="images/home/01.jpeg" alt="Image 1">
+            <img src="images/home/02.jpeg" alt="Image 2">
+            <img src="images/home/03.png" alt="Image 3">
+            <img src="images/home/04.jpeg" alt="Image 4">
+            <img src="images/home/05.jpeg" alt="Image 5">
+        </div>
+    
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1>Welcome to Team Triguna</h1>
+            <p>Innovating the Future</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+    
+    
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p><h3>Triguna The Science of Living a not for profit incorporated in 2022 and driven by an unyielding passion to create a positive impact in society, transcending boundaries and barriers. We believe in empowering individuals and communities, providing them with the tools and opportunities to thrive and reach their full potential.</p>
+
+    </section>
+
+    <section class="impact-section">
+        <h2>Our Impact</h2>
+        <div class="impact-container">
+            <img src="02.jpeg" alt="Students in classroom" class="impact-image">
+            <div class="impact-stats">
+                <div class="stat">
+                    <h3>120k+</h3>
+                    <p>YOUTH TRAINED</p>
+                </div>
+                <div class="stat">
+                    <h3>18</h3>
+                    <p>STATES COVERED</p>
+                </div>
+                <div class="stat">
+                    <h3>80+</h3>
+                    <p>DISTRICTS</p>
+                </div>
+                <div class="stat">
+                    <h3>800+</h3>
+                    <p>SCHOOLS / COLLEGES</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sustainable-goals">
+        <h2>Our Sustainable Goals</h2>
+        <div class="goals-container">
+            <div class="goal-box">
+                <img src="images/our goals/01.png" alt="Quality Education">
+            </div>
+            <div class="goal-box">
+                <img src="images/our goals/02.png" alt="Gender Equality">
+            </div>
+            <div class="goal-box">
+                <img src="images/our goals/03.png" alt="Good Health and Well-being">
+            </div>
+            <div class="goal-box">
+                <img src="images/our goals/04.png" alt="Reduced Inequalities">
+            </div>
+            <div class="goal-box">
+                <img src="images/our goals/05.png" alt="No Poverty">
+            </div>
+            <div class="goal-box">
+                <img src="images/our goals/06.png" alt="Decent Work and Economic Growth">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="awards">
+        <h2>Award and Recognition</h2>
+        <div class="award-image">
+            <img src="images/our goals/award.png" alt="Award">
+        </div>
+    </section>
+
+    <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="partners-container">
+            <div class="partner-box">
+                <img src="images/our partners/01.jpg" alt="Partner 1">
+            </div>
+            <div class="partner-box">
+                <img src="images/our partners/02.jpeg" alt="Partner 2">
+            </div>
+            <div class="partner-box">
+                <img src="images/our partners/03.webp" alt="Partner 3">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/1kdR8u8KS8M" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/1kdR8u8KS8M" allowfullscreen></iframe>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/1kdR8u8KS8M" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="whatsappForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triguna Footer</title>
+    <link rel="stylesheet" href="css file/styles.css">
+    <link rel="stylesheet" href="css file/header.css">
+    <link rel="stylesheet" href="css file/footer.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<footer></footer>
+    
+
+</body>
+</html>
+<script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Form reload होने से रोकेगा
+
+        // Input fields से डेटा लेना
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        // WhatsApp नंबर (अपना नंबर डालें, बिना +91 के)
+        let phoneNumber = "918090365381"; // अपने WhatsApp नंबर से बदलें
+
+        // WhatsApp मैसेज फॉर्मेट बनाना
+        let whatsappMessage = `Hello, I am ${name}.%0AEmail: ${email}%0AMessage: ${message}`;
+
+        // WhatsApp URL बनाना
+        let whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+        // WhatsApp पर भेजने के लिए Redirect करना
+        window.open(whatsappURL, "_blank");
+    });
+</script>
+
+<script src="script.js"></script>
+<script src="header.js"></script>
+<script src="footer.js"></script>
+</body>
+</html>

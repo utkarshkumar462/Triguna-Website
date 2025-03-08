@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign - Team Triguna</title>
+    <link rel="stylesheet" href="css file/footer.css">
+    <link rel="stylesheet" href="css file/header.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: url('images/campaign/banner.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 80%;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Campaign Content */
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .campaign-text {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Campaign Grid */
+        .campaign-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .campaign-box {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .campaign-box img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .campaign-box:hover img {
+            transform: scale(1.05);
+        }
+
+        .campaign-box p {
+            padding: 15px;
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+        .hero {
+            background: linear-gradient(to right, #4a90e2, #003366);
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header></header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Campaign</h1>
+            <p>In the eyes of compassion, we find clarity.</p>
+        </div>
+    </div>
+
+    <!-- Campaign Content -->
+    <div class="container">
+        <h2>Our Initiatives</h2>
+        <p class="campaign-text">
+            “DON’T TRY TO DRIVE THE HOMELESS INTO PLACES WE FIND SUITABLE. HELP THEM SURVIVE IN PLACES THEY FIND SUITABLE.”
+            
+        </p>
+        <p>
+          Team Triguna Organized an EYE Care Camp in shelter home of Earth Savior Foundation. Camp was facilitated with the help of CLIO Eye care Gurugram.
+
+We were able to provide vital eye care services to mentally retarded people, psychiatric illness and senior citizen people living in shelter home of Earth Savior Foundation. The success of the Eye Camp was a testament of belief in our mission and your commitment to making a positive difference in the lives of others.
+
+Total of 291 eye examinations and screenings, provided counselling support and necessary medicine. 60 odd patients was prescribed with spectacles and was facilitated with spectacles. Team Triguna is thankful for your support directly contributed to these outcomes, and the smiles on the faces of those who benefited from your kindness that were truly heartwarming.
+        </p>
+
+        <div class="campaign-grid">
+            <div class="campaign-box">
+                <img src="images/campaign/01.jpeg" alt="Campaign 1">
+                <p>Helping the homeless</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/02.jpeg" alt="Campaign 2">
+                <p>Eye care camp</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/03.jpeg" alt="Campaign 3">
+                <p>Food distribution</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/04.jpeg" alt="Campaign 4">
+                <p>Medical support</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/05.jpeg" alt="Campaign 5">
+                <p>Clothing donation</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/06.jpeg" alt="Campaign 6">
+                <p>Blood donation drive</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/07.jpeg" alt="Campaign 7">
+                <p>Educational support</p>
+            </div>
+            <div class="campaign-box">
+                <img src="images/campaign/08.jpeg" alt="Campaign 8">
+                <p>Women empowerment</p>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>
