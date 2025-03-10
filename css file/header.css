@@ -138,3 +138,22 @@ nav {
 body {
     padding-top: 60px; /* Navbar के नीचे 60px gap */
 }
+/* ye back button k liye */
+/* for back button */
+/* Back Button */
+.go-back {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    background: #005f8a;
+}
